@@ -5,7 +5,7 @@ from .models import GymGear, NutritionSupplement, WorkoutProgram
 def gym_gear(request):
     gym_gears = GymGear.objects.all()
     context = {'gym_gears': gym_gears}
-    return render(request, 'products/gymgears.html', context)
+    return render(request, 'products/gym_gears.html', context)
 
 def nutrition_supplement(request):
     supplements = NutritionSupplement.objects.all()
@@ -15,4 +15,4 @@ def nutrition_supplement(request):
 def workout_program(request):
     programs = WorkoutProgram.objects.all()
     context = {'programs': programs}
-    return render(request, 'products/workout_programs.html', context)
+    return render(request, 'products/workoutprograms.html', context)
