@@ -1,0 +1,9 @@
+<!-- products/templates/products/gymgears.html -->
+{% for gear in gym_gears %}
+    <div>
+        <h3>{{ gear.name }}</h3>
+        <p>{{ gear.description }}</p>
+        <p>Price: ${{ gear.price }}</p>
+        <p>Category: {{ gear.category }}</p>
+    </div>
+{% endfor %}
