@@ -1,4 +1,6 @@
-<!-- products/templates/products/gymgears.html -->
+{% extends 'core/base.html' %}
+{% block title %}GYM GEAR 🗿{% endblock %} 
+{% block content %}
 {% for gear in gym_gears %}
     <div>
         <h3>{{ gear.name }}</h3>
@@ -7,3 +9,4 @@
         <p>Category: {{ gear.category }}</p>
     </div>
 {% endfor %}
+{% endblock %}
