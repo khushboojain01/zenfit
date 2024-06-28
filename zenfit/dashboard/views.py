@@ -1,3 +1,3 @@
 from django.shortcuts import render
 def profile(request):
-    return render(request, 'templates/profile.html'),
+    return render(request, 'dashboard/profile.html', {'username': request.user.username}),

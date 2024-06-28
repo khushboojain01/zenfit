@@ -2,6 +2,9 @@ from django.shortcuts import render
 
 from .models import GymGear, NutritionSupplement, WorkoutProgram
 
+def frontpage(request):
+    return render(request, 'core/frontpage.html')
+
 def gym_gear(request):
     gym_gears = GymGear.objects.all()
     context = {'gym_gears': gym_gears}
